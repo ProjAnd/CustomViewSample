@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomViewSample</string>
+    <string name="customtext">Hello This CustomTextView</string>
 </resources>
