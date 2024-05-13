@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    >
+
+
+    <com.example.customviewsample.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Message is failure !"
+        app:type="italic"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/toast_failure"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

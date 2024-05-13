@@ -16,21 +16,22 @@ class CustomTextView (context: Context, attrs: AttributeSet?) : AppCompatTextVie
         val headlineTypeFace : Typeface = Typeface.create("MonteSerrat Bold", Typeface.BOLD)
         val headlineTypeFaceItallic : Typeface = Typeface.create("MonteSerrat Bold", Typeface.ITALIC)
 
-        //var tr : TypedArray = context.obtainStyledAttributes(attrs,R.styleable.CustomTextView)
-        //var type = tr.getString(R.styleable.CustomTextView_type)
-//
-//        when(type){
-//            "bold" ->{
-//                this.typeface = headlineTypeFace
-//            }
-//            "italic" ->{
-//                this.typeface = headlineTypeFaceItallic
-//            }
-//        }
-//
-//        tr.recycle()
+        var tr : TypedArray = context.obtainStyledAttributes(attrs,R.styleable.CustomTextView)
+        var type = tr.getString(R.styleable.CustomTextView_type)
+
+        when(type){
+            "bold" ->{
+                this.typeface = headlineTypeFace
+                this.textSize = 20f
+            }
+            "italic" ->{
+                this.typeface = headlineTypeFaceItallic
+                this.textSize = 15f
+            }
+        }
+
+        tr.recycle()
 
     }
-
 
 }
