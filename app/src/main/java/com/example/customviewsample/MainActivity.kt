@@ -20,30 +20,30 @@ class MainActivity : AppCompatActivity() {
             //Utils.showDialogBox(this)
             //Utils.showAlertDialogBix(this)
 
-//            var ft  = supportFragmentManager.beginTransaction()
-//            var prevdialog = supportFragmentManager.findFragmentByTag("dialog")
-//
-//            if(prevdialog!=null){
-//                   ft.remove(prevdialog)
-//            }
-//
-//               var customDialog = CustomePopUp.getInstance("Alert !",
-//                   "Here please give the description for the alert dialog", object:
-//                       CustomePopUp.OnButtonClick
-//                   {
-//                       override fun onOk() {
-//                           Toast.makeText(applicationContext, "Ok Clicked", Toast.LENGTH_SHORT).show()
-//                       }
-//
-//                       override fun onCancel() {
-//
-//                           //Toast.makeText(applicationContext, "onCancel Clicked", Toast.LENGTH_SHORT).show()
-//                       }
-//
-//                   })
-//                 //.show(ft, "dialog")
-//                 ft.add(customDialog, "dialog")
-//                 ft.addToBackStack("dialog").commit()
+            var ft  = supportFragmentManager.beginTransaction()
+            var prevdialog = supportFragmentManager.findFragmentByTag("dialog")
+
+            if(prevdialog!=null){
+                   ft.remove(prevdialog)
+            }
+
+               var customDialog = Dialog_FullScrenn.getInstance("Alert !",
+                   "Here please give the description for the alert dialog", object:
+                       Dialog_FullScrenn.OnButtonClick
+                   {
+                       override fun onOk() {
+                           Toast.makeText(applicationContext, "Ok Clicked", Toast.LENGTH_SHORT).show()
+                       }
+
+                       override fun onCancel() {
+
+                           //Toast.makeText(applicationContext, "onCancel Clicked", Toast.LENGTH_SHORT).show()
+                       }
+
+                   })
+                 //.show(ft, "dialog")
+                 ft.add(customDialog, "dialog")
+                 ft.addToBackStack("dialog").commit()
         }
     }
 

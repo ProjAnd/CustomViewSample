@@ -7,13 +7,12 @@ import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.Toast
 import com.example.customviewsample.R
-import java.time.Duration
 
 object Utils {
     fun showDialogBox(context: Context){
         var dialog = Dialog(context, R.style.customDialog)
         dialog.apply {
-            setContentView(LayoutInflater.from(context).inflate(R.layout.pupup, null, false))
+            setContentView(LayoutInflater.from(context).inflate(R.layout.custom_dialog, null, false))
             findViewById<Button>(R.id.btn_ok).setOnClickListener {
                 Toast.makeText(context, "Ok Clicked", Toast.LENGTH_SHORT).show()
             }
@@ -28,7 +27,7 @@ object Utils {
                 var dialog = AlertDialog.Builder(context, R.style.customDialog).apply {
                // title = "Alert !"
                 setMessage("This is alertDialog box")
-                    setView(R.layout.pupup)
+                    setView(R.layout.custom_dialog)
                         .setPositiveButton("ok", DialogInterface.OnClickListener { dialogInterface, i ->
 
                         })
