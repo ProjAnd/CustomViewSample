@@ -26,7 +26,6 @@ class CustomButton(context: Context, attrs: AttributeSet?) : AppCompatButton(con
         this.setTextColor(resources.getColor(R.color.white))
         this.textSize = 14f
         this.typeface = fonttf_semibold
-
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

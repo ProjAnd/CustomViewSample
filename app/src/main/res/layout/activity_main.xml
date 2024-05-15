@@ -44,14 +44,52 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="submit"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/customTextView_norm"
-        tools:ignore="MissingConstraints"
         android:textAllCaps="false"/>
 
-<!--    <com.example.customviewsample.CustomView-->
+    <com.example.customviewsample.CustomButton
+        android:id="@+id/btn_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="dialog"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customButton"
+         />
+
+    <com.example.customviewsample.CustomButton
+        android:id="@+id/btn_toast_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Sucess Toast"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dialog"
+        />
+
+    <com.example.customviewsample.CustomButton
+        android:id="@+id/btn_toast_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Error Toast"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_toast_success"
+        />
+
+    <!--    <com.example.customviewsample.CustomView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        tools:ignore="MissingConstraints"-->

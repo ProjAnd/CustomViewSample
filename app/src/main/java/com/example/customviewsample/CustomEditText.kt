@@ -25,8 +25,7 @@ class CustomEditText(context: Context, attrs: AttributeSet?) : AppCompatEditText
         this.textSize = 14f
         this.typeface = text_type_face
         //this.error = errorHint
+
     }
-
-
 
 }

@@ -102,8 +102,8 @@
             android:id="@+id/btn_ok"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:text="ok"
-            android:layout_weight="1"
+            android:text="Sing up"
+            android:layout_weight="0.5"
             />
 
         <com.example.customviewsample.CustomButton
@@ -115,6 +115,8 @@
             android:text="Cancel"
             android:visibility="gone"
             />
+
+
 
     </LinearLayout>
 

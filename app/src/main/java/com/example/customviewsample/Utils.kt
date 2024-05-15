@@ -42,7 +42,7 @@ object Utils {
         var successToast = Toast(context)
         successToast.apply {
 
-            duration = Toast.LENGTH_LONG
+            duration = Toast.LENGTH_SHORT
             setGravity(Gravity.FILL_HORIZONTAL,0,0)
             view = LayoutInflater.from(context).inflate(R.layout.toast_success, null)
         }.show()
@@ -51,7 +51,7 @@ object Utils {
         var successToast = Toast(context)
         successToast.apply {
 
-            duration = Toast.LENGTH_LONG
+            duration = Toast.LENGTH_SHORT
             setGravity(Gravity.FILL_HORIZONTAL,0,0)
             view = LayoutInflater.from(context).inflate(R.layout.toast_failure, null)
         }.show()
